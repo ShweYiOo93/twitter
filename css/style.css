@@ -1,0 +1,269 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----navbar----*/
+.navbar-nav li{
+    padding:0 10px;
+}
+.navbar-nav li a{
+    color: #fff;
+}
+.sticky{
+    background-color: #33AAF3;
+    position: fixed;
+    z-index: 999;
+}
+
+/*---slider img--*/
+.slider{
+    background: url('../img/slider.png');
+    height: 625px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: relative;
+}
+
+/*----main-txt----*/
+.main-txt{
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.main-sub{
+    letter-spacing: 2px;
+}
+#down-arrow{
+    position: absolute;
+    font-size: 35px;
+    left: 50%;
+    top: 140%;
+}
+
+/*---about us---*/
+.about-us{
+    background-color: #fff;
+    color: #333;
+}
+.about-us h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    left: -70px;
+    color: #33AAF3;
+    font-weight: bold;
+}
+.about-us h2{
+    font-size: 42px;
+    margin-left: 30px;
+    line-height: 50px;
+}
+.about-img{
+    background: url('../img/about-img.jpg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+/*---About-company---*/
+.about-company{
+    background-color: #f4f4f4;
+}
+.icon{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+}
+.icon i{
+    font-size: 42px;
+}
+.icon h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.icon hr{
+    width: 45px;
+    height: 3px;
+    background-color: #33AAF3;
+    border: none;
+}
+.icon p{
+    margin-top: 10px;
+}
+.icon:hover{
+    background-color: #33AAF3;
+    transition: 1000ms;
+}
+.icon:hover i,
+.icon:hover h3,
+.icon:hover p{
+    color: #fff;
+}
+.icon:hover hr{
+    background-color: #fff;
+}
+
+/*-----service----*/
+.service{
+    background-color: #fff;
+    padding: 100px 0px;
+}
+.service h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    left: -70px;
+    color: #33AAF3;
+    font-weight: bold;
+}
+.service h2{
+    font-size: 36px;
+    margin-left: 5px;
+    line-height: 50px;
+}
+.service p{
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+/*----advertise----*/
+.advertise{
+    background: url('../img/advertise.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    opacity: 0.8;
+}
+.advertise h3{
+    color: #fff;
+    line-height: 50px;
+    padding-top: 80px;
+    text-shadow: 2px 2px 8px #33AAF3;
+}
+
+/*---blog-----*/
+.blog{
+    background: linear-gradient(to right, #222, #33AAF3);
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+}
+.blog h3{
+    font-size: 33px;
+}
+.blog .card{
+    background: #2525;
+}
+.blog .card:hover{
+    transform: translateY(-5px) scale(1);
+    transition: linear .2s;
+}
+
+/*---footer----*/
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+
+/*--copyright---*/
+.copyright{
+    background-color: #33AAF3;
+}
+
+/*---top btn---*/
+#topbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background-color: #33AAF3;
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    display: none;
+}
+
+/*----create preloader with css---*/
+.loader-container{
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #33AAF3;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #f00;
+    }
+    50%{
+        color: #0f0;
+    }
+    25%{
+        color: #ff0;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*--about page*/
+.about-page{
+    background: url('../img/freestocks-HAIPJ8PyeL8-unsplash.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb{
+    background-color: transparent !Important;
+    padding: 160px 110px !Important;
+}
+
+.breadcrumb-item.active{
+    color: #fff !Important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #fff !Important;
+}
+
+/*about detail*/
+.about-detail hr{
+    width: 70px;
+    height: 3px;
+    background-color: #33AAF3;
+    border: none;
+    margin-bottom: 40px;
+}
+.about-detail p{
+    line-height: 28px;
+}
